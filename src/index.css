@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+
+/* Use CSS Selector to Toggling Ligth and Dark Mode */
+@custom-variant dark (&:where(.dark, .dark *));
