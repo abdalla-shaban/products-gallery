@@ -2,6 +2,7 @@ import { IoCart } from "react-icons/io5";
 import { TbPercentage } from "react-icons/tb";
 import { Link } from "react-router";
 import { useCart } from "../context/Cart/hook";
+import { motion } from "motion/react";
 
 const ProductCard = ({
   id,
@@ -17,7 +18,10 @@ const ProductCard = ({
 }) => {
   const { cart, addToCart } = useCart();
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, scale: 0.7 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
       className={
         "p-5 pt-8 group size-full transition-all duration-500 hover:shadow-main-light/20 flex flex-col gap-4 relative dark:bg-semi-main-dark bg-white shadow rounded-xl overflow-hidden"
       }
@@ -75,7 +79,7 @@ const ProductCard = ({
           <IoCart size={24} />
         </button>
       )}
-    </div>
+    </motion.div>
   );
 };
 

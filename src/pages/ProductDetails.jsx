@@ -1,10 +1,10 @@
-import { useEffect } from "react";
+import { lazy, useEffect } from "react";
 import { Link, useParams } from "react-router";
-import { useProducts } from "../context/Products/hook";
-import Loading from "../components/Loading";
 import { IoCart } from "react-icons/io5";
 import { TbPercentage } from "react-icons/tb";
 import { useCart } from "../context/Cart/hook";
+import { useProducts } from "../context/Products/hook";
+const Loading = lazy(() => import("../components/Loading"));
 
 const ProductDetails = () => {
   const { isLoading, error, getSingleProduct, singleProduct } = useProducts();

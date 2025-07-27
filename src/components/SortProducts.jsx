@@ -11,7 +11,7 @@ const SortProducts = () => {
         <select
           name="sortData"
           id="sortData"
-          className="appearance-none w-full p-3 outline-none border rounded-lg"
+          className="appearance-none w-full *:text-main-dark p-3 outline-none border rounded-lg"
           defaultValue={"all"}
           onChange={(e) => {
             sortProducts(e.target.value.toLowerCase().trim());

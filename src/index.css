@@ -32,3 +32,15 @@ button {
 .active-cat-tab {
   @apply dark:bg-semi-main-light dark:text-main-dark bg-main-dark text-white;
 }
+
+::-webkit-scrollbar {
+  @apply w-4;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-main-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-semi-main-light;
+}

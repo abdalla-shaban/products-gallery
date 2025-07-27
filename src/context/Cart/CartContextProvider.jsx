@@ -53,8 +53,8 @@ export const CartContextProvider = ({ children }) => {
     setCart([]);
   };
 
-  const cartLength = cart.reduce((total, item) => total + item.quantity, 0);
-  console.log("🚀 ~ CartContextProvider ~ cartLength:", cartLength);
+  const cartLength = cart.reduce((total, item) => total + item.quantity * item.price, 0);
+  // console.log("🚀 ~ CartContextProvider ~ cartLength:", cartLength);
 
   return (
     <CartContext.Provider
