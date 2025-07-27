@@ -9,7 +9,7 @@ Users can **browse**, **search**, **sort**, and **filter** products, view detail
 
 ## 📸 Demo
 
-[🔗 Live Demo](#https://products-gallery-psi.vercel.app/) <!-- Add your deployed URL here -->
+[🔗 Live Demo](https://products-gallery-psi.vercel.app/)
 
 ![Home Page](./public/hero.png)
 ![Product Details](./public/single-product.png)
