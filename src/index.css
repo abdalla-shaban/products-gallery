@@ -1,5 +1,34 @@
 @import "tailwindcss";
 
+@theme {
+  /* Dark Colors */
+  --color-main-dark: #222831;
+  --color-semi-main-dark: #393e46;
+  --color-secondary-dark: #00adb5;
+  --color-semi-secondary-dark: #eeeeee;
+  /* Light Colors */
+  --color-main-light: #71c9ce;
+  --color-semi-main-light: #a6e3e9;
+  --color-secondary-light: #cbf1f5;
+  --color-semi-secondary-light: #e3fdfd;
+}
 
+/* ========== CUSTOM STYLES ========== */
 /* Use CSS Selector to Toggling Ligth and Dark Mode */
 @custom-variant dark (&:where(.dark, .dark *));
+/* Enable Hover on Mobile Screens */
+@custom-variant hover (&:hover);
+/* Reste Container Size */
+@utility container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+button {
+  @apply cursor-pointer;
+}
+
+.active-cat-tab {
+  @apply dark:bg-semi-main-light dark:text-main-dark bg-main-dark text-white;
+}
